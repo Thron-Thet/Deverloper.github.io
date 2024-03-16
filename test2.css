@@ -1,0 +1,117 @@
+body{
+  background-color: #333;
+}
+.container{
+
+  max-width: 50%;
+}
+.menu{
+   background-color: #fff;
+}
+.menu ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+.menu ul li{
+  float: left;
+}
+.menu ul li a{
+  display: block;
+  color:#0000008f;
+  padding: 20px;
+  text-decoration: none;
+  
+}
+.menu ul li a:hover{
+  color: blue;
+}
+.logo{
+  
+  background-color: #fff;
+
+}
+.logo img{
+  height: 50px;
+  
+  
+}
+.menu-bar{
+  background-color: yellow;
+  height: 500px;
+  padding: 0;
+}
+.menu-bar img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.floter{
+  background-color:black;
+  height: 50px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+
+
+/* Exstra large device (desktop,1200px and up)(xl) */
+@media(max-width:1200px)
+{
+    
+}
+/* large device(desktop,992px and up)(lg)  */
+@media(min-width:992px) and (max-width:1199.98px) {
+  .container{
+    max-width: 80%;
+  }
+  .menu-bar{
+    height: 450px;
+  }
+
+}
+/* large device(tepblet,768px and up)(md) */
+@media(min-width:768px) and (max-width:991.98px) 
+{
+    .container{
+      max-width: 100%;
+    }
+    .menu-bar{
+      height: 500px;
+    }
+
+}
+/* large device (lansdcap phone,576px and up)(sm) */
+@media(min-width:576px) and (max-width:767.98px) 
+{
+
+  .container{
+      max-width: 100%;
+  }
+  .menu-bar{
+  height: 400px;
+  }
+
+}
+/* Exstra small device(portrit phone,less than 750px) (col)*/
+@media (max-width:575.98px)
+{
+  .container{
+    max-width: 100%;
+  }
+  .logo{
+    text-align: center;
+  }
+  .menu ul{
+    float: left;
+    float: none;
+    justify-content: center;
+    display: flex;
+  }
+  .menu-bar{
+    height: 300px;
+  }
+}

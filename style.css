@@ -1,0 +1,393 @@
+.menu-bar{
+    background-color: #fff;
+    box-shadow: 1px 1px 7px 0 dimgray;
+}
+h1,h2,h3,p,ul,a,li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.menu-bar .btn{
+    padding: 0;
+}
+.menu-bar li{
+    float: left;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    display: block;
+    text-transform: uppercase;
+}.menu-bar ul li a:hover{
+    color:rgb(95, 226, 43);
+}
+.menu-bar ul:nth-child(2){
+    float: right;
+}
+
+.menu-bar li.logo a{
+    padding: 0;
+}
+.menu-bar ul li a img{
+    height: 50px;
+    margin-top: 7px;
+}
+.menu-bar ul li.btn{
+    display: none;
+}
+
+.slide{
+    background-color: crimson;
+    height: 700px;
+    padding: 0;
+    position: relative;
+}
+.slide-img{
+    
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    position: relative;
+    
+   
+}
+.slide-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+
+.btn-shop{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    background-color: rgba(220, 20, 60, 0.747);
+    padding: 20px;
+    border-radius: 8px;
+    transform: translateX(-70%)
+}
+.item-box{
+    height: 300px;
+    margin-top: 10px;
+    padding: 0px 5px;
+    
+   
+}
+.box-1{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(220, 220, 215);
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+   
+}
+.box-1 img{
+    width: 100%;
+    height: 100%;
+   object-fit: cover;
+   transition: 0.3s;
+  
+}
+.box-1 h1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding: 15px;
+    color: white;
+    background-color: rgba(255, 166, 0, 0.586);
+    border-radius: 5px;
+    width: 80%;
+    font-size: 16px;
+    transform: translateX(-50%);
+    text-align: center;
+    cursor: pointer;
+}
+.box-1:hover img{
+    transform: scale(1.1);
+}
+.box-1:hover h1{
+    background-color: orange;
+}
+.header-box{
+    height: 100px;
+    margin-top: 10px;
+    padding: 15px;
+}
+.header-box h1{
+    text-align: center;
+    color: black;
+    
+}
+.header-box p{
+    text-align: center;
+    color: black;
+    font-size: 22px;
+}
+.header-bar{
+  
+    height: 310px;
+    margin-top: 10px;
+    padding: 3px;
+}
+.header-bar .bar-box{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(236, 236, 250);
+}
+.img-box{
+    width: 100%;
+    
+    height: 70%;
+    position: relative;
+}
+.img-box h1{
+    font-size: 10px;
+    color: white;
+    width: px;
+    border-radius: 5px;
+    background-color: greenyellow;
+    padding: 8px;
+    position: absolute;
+    overflow: hidden;
+   
+}
+.img-box:hover h1{
+    color: black;
+}
+.img-box .btn-f{
+    font-size: 20px;
+    color: white;
+    right: 20px;
+    border-radius: 50%;
+    background-color: rgba(38, 1, 249, 0.789);
+    padding:5px 10px;
+    position: absolute;
+   
+}
+.img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+   
+    
+}
+
+.img-box:hover .btn-f{
+    color: rgb(0, 0, 250);
+}
+.txt-box{
+    width: 100%;
+    height: 30%;
+    text-align: center;
+}
+.txt-box p{
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+}
+.ADD h1{
+    background-color: rgba(255, 166, 0, 0.597);
+    font-size: 15px;
+    color: rgb(149, 149, 149);
+    display: inline-block;
+    border-radius: 5px;
+    padding:8px 15px;
+    right: 30px;
+}
+.ADD:hover h1{
+    color: rgba(55, 0, 255, 0.448);
+}
+
+
+
+/* Exstra large device (desktop,1200px and up)(xl) */
+@media(max-width:1200px)
+{
+   
+}
+/* large device(desktop,992px and up)(lg)  */
+@media(min-width:992px) and (max-width:1199.98px) {
+    .slide{
+        background-color: crimson;
+        height: 500px;
+        padding: 0;
+        position: relative;
+    }
+    .item-box{
+        height: 280px;
+        margin-top: 10px;
+        padding: 0px 5px;
+    }
+    .box-1 h1{
+        width: 50%;
+    }
+    .box-1{
+        height: 250px;
+    }
+    .header-bar{
+  
+        height: 380px;
+        
+    }
+    .ADD h1{
+        background-color: rgb(188, 180, 166);
+        font-size: 15px;
+        color: white;
+        display: inline-block;
+        border-radius: 5px;
+        top: 0;
+        right: 30px;
+        margin-bottom: 10px;
+    }
+    .img-box .btn-f{
+        right: 0;
+    }
+
+    
+}
+/* large device(tepblet,768px and up)(md) */
+@media(min-width:768px) and (max-width:991.98px) 
+{
+    .menu-bar ul li.btn{
+        display: block;
+    }
+    .menu-bar ul:nth-child(1) li:not(.btn){
+        display: none;
+    }
+    .slide{
+        background-color: crimson;
+        height: 400px;
+        padding: 0;
+        position: relative;
+    }
+    .item-box{
+        height: 250px;
+        margin-top: 10px;
+        padding: 0px 5px;
+    }
+    .box-1{
+        height: 230px;
+    }
+    .box-1 h1{
+        width: 50%;
+    }
+    .header-bar{
+  
+        height: 320px;
+        
+    }
+    .ADD h1{
+        background-color: rgb(253, 162, 6);
+        font-size: 15px;
+        color: white;
+        display: inline-block;
+        border-radius: 5px;
+        top: 0;
+        right: 30px;
+        margin-bottom: 10px;
+    }
+    .img-box .btn-f{
+        right: 0;
+    }
+    
+    
+
+}
+/* large device (lansdcap phone,576px and up)(sm) */
+@media(min-width:576px) and (max-width:767.98px) 
+{
+    .menu-bar ul li.btn{
+        display: block;
+    }
+    .menu-bar ul:nth-child(1) li:not(.btn){
+        display: none;
+    }
+    .slide{
+        background-color: crimson;
+        height:350px;
+        padding: 0;
+        position: relative;
+    }
+    .item-box{
+        height: 260px;
+        margin-top: 10px;
+        padding: 0px 5px;
+    }
+    .header-bar{
+  
+        height: 320px;
+        
+    }
+    .ADD h1{
+        background-color: rgb(253, 162, 6);
+        font-size: 15px;
+        color: white;
+        display: inline-block;
+        border-radius: 5px;
+        top: 0;
+        right: 30px;
+        margin-bottom: 10px;
+    }
+    .img-box .btn-f{
+        right: 0;
+    }
+    
+ 
+}
+    
+
+/* Exstra small device(portrit phone,less than 750px) (col)*/
+@media (max-width:575.98px)
+{
+    .menu-bar ul li.btn{
+        display: block;
+    }
+    .menu-bar ul:nth-child(1) li:not(.btn){
+        display: none;
+        display: 0;
+    }
+    .slide{
+        background-color: crimson;
+        height: 250px;
+        padding: 0;
+        position: relative;
+    }
+    .item-box{
+        height: 230px;
+        margin-top: 10px;
+        padding: 0px 5px;
+    }
+    .box-1 h1{
+        width: 50%;
+    }
+    
+    .header-bar{
+  
+        height: 380px;
+        
+    }
+    .ADD h1{
+        background-color: rgb(253, 162, 6);
+        font-size: 15px;
+        color: white;
+        display: inline-block;
+        border-radius: 5px;
+        top: 0;
+        right: 30px;
+        margin-bottom: 10px;
+    }
+    .img-box .btn-f{
+        right: 0;
+    }
+    
+
+}
+   

@@ -1,6 +1,15 @@
 .menu-bar{
     background-color: #fff;
     box-shadow: 1px 1px 7px 0 dimgray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+.sizeBox{
+    width: 100%;
+    height: 65px;
 }
 h1,h2,h3,p,ul,a,li{
     list-style-type: none;
@@ -131,30 +140,30 @@ h1,h2,h3,p,ul,a,li{
 }
 .header-bar{
   
-    height: 310px;
+    height: 350px;
     margin-top: 10px;
     padding: 3px;
 }
 .header-bar .bar-box{
     width: 100%;
     height: 100%;
-    background-color: rgb(236, 236, 250);
+   
 }
 .img-box{
     width: 100%;
-    
-    height: 70%;
+    height: 60%;
     position: relative;
 }
 .img-box h1{
     font-size: 10px;
     color: white;
-    width: px;
-    border-radius: 5px;
-    background-color: greenyellow;
-    padding: 8px;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+    background-color: rgb(47, 189, 255);
+    padding: 5px;
     position: absolute;
-    overflow: hidden;
+   
    
 }
 .img-box:hover h1{
@@ -163,12 +172,22 @@ h1,h2,h3,p,ul,a,li{
 .img-box .btn-f{
     font-size: 20px;
     color: white;
-    right: 20px;
+    top: 5px;
+    right: 5px;
     border-radius: 50%;
-    background-color: rgba(38, 1, 249, 0.789);
-    padding:5px 10px;
+    background-color: #3b5998;
+    width: 40px;
+    height: 40px;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
    
+}
+
+.header-bar .bar-box:hover .btn-f{
+    opacity: 1;
 }
 .img-box img{
     width: 100%;
@@ -176,16 +195,18 @@ h1,h2,h3,p,ul,a,li{
     object-fit: cover;
    
    
-    
+}
+.img-box:hover img{
+    border: 1px solid rgb(20, 187, 220);
+   
 }
 
-.img-box:hover .btn-f{
-    color: rgb(0, 0, 250);
-}
+
 .txt-box{
     width: 100%;
-    height: 30%;
+    height: 40%;
     text-align: center;
+   
 }
 .txt-box p{
     font-size: 13px;
@@ -193,25 +214,69 @@ h1,h2,h3,p,ul,a,li{
     text-align: center;
     padding: 10px;
 }
+
 .ADD h1{
-    background-color: rgba(255, 166, 0, 0.597);
+    background-color: rgba(255, 166, 0, 0.778);
     font-size: 15px;
     color: rgb(149, 149, 149);
     display: inline-block;
     border-radius: 5px;
-    padding:8px 15px;
+    padding:4px 8px;
     right: 30px;
 }
 .ADD:hover h1{
-    color: rgba(55, 0, 255, 0.448);
+    background-color:orange;
 }
+.txt-box span.dis{
+    color:  red;
+    text-decoration: line-through;
+    font-size: 14px;
+    font-weight: bold;
 
+}
+.txt-box span.dis1{
+    font-size: 15px;
+    color: blueviolet;
+    font-weight: bold;
+}
+.txt-box ul li{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 0;
+   
+}
+.txt-box ul li img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+.txt-box ul li:hover{
+    border: 1px solid crimson;
+}
 
 
 /* Exstra large device (desktop,1200px and up)(xl) */
 @media(max-width:1200px)
 {
-   
+    .ADD h1{
+        background-color: rgba(236, 154, 14, 0.829);
+        font-size: 12px;
+        color: white;
+        display: inline-block;
+        border-radius: 2px;
+        top: 0;
+        padding:  10px 30px;
+        margin-top: 4px;
+        right: 30px;
+        margin-bottom: 10px;
+    }
+    .ADD:hover h1{
+        background-color: orange;
+    }
 }
 /* large device(desktop,992px and up)(lg)  */
 @media(min-width:992px) and (max-width:1199.98px) {
@@ -234,24 +299,29 @@ h1,h2,h3,p,ul,a,li{
     }
     .header-bar{
   
-        height: 380px;
+        height: 420px;
         
     }
+  
     .ADD h1{
-        background-color: rgb(188, 180, 166);
-        font-size: 15px;
+        background-color: rgba(236, 154, 14, 0.829);
+        font-size: 12px;
         color: white;
         display: inline-block;
-        border-radius: 5px;
+        border-radius: 2px;
         top: 0;
+       
+        margin-top: 4px;
         right: 30px;
         margin-bottom: 10px;
+    }
+    .ADD:hover h1{
+        background-color: orange;
     }
     .img-box .btn-f{
         right: 0;
     }
-
-    
+   
 }
 /* large device(tepblet,768px and up)(md) */
 @media(min-width:768px) and (max-width:991.98px) 
@@ -281,18 +351,23 @@ h1,h2,h3,p,ul,a,li{
     }
     .header-bar{
   
-        height: 320px;
+        height: 369px;
         
     }
     .ADD h1{
-        background-color: rgb(253, 162, 6);
-        font-size: 15px;
+        background-color: rgba(236, 154, 14, 0.829);
+        font-size: 12px;
         color: white;
         display: inline-block;
-        border-radius: 5px;
+        border-radius: 2px;
         top: 0;
+        padding:  10px 30px;
+        margin-top: 4px;
         right: 30px;
         margin-bottom: 10px;
+    }
+    .ADD:hover h1{
+        background-color: orange;
     }
     .img-box .btn-f{
         right: 0;
@@ -323,22 +398,31 @@ h1,h2,h3,p,ul,a,li{
     }
     .header-bar{
   
-        height: 320px;
+        height: 369px;
         
     }
     .ADD h1{
-        background-color: rgb(253, 162, 6);
-        font-size: 15px;
+        background-color: rgba(253, 162, 6, 0.745);
+        font-size: 12px;
         color: white;
         display: inline-block;
-        border-radius: 5px;
+        border-radius: 2px;
         top: 0;
+        padding: 10px 40px;
+        margin-top: 4px;
         right: 30px;
         margin-bottom: 10px;
+    }
+    .ADD:hover h1{
+        background-color:  orange;
+        
     }
     .img-box .btn-f{
         right: 0;
     }
+    
+   
+  
     
  
 }
@@ -368,25 +452,11 @@ h1,h2,h3,p,ul,a,li{
     .box-1 h1{
         width: 50%;
     }
-    
     .header-bar{
-  
-        height: 380px;
-        
+        height: 420px;
     }
-    .ADD h1{
-        background-color: rgb(253, 162, 6);
-        font-size: 15px;
-        color: white;
-        display: inline-block;
-        border-radius: 5px;
-        top: 0;
-        right: 30px;
-        margin-bottom: 10px;
-    }
-    .img-box .btn-f{
-        right: 0;
-    }
+    
+   
     
 
 }
